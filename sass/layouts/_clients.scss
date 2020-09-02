@@ -1,0 +1,26 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+
+  &-img {
+    display: block;
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid $icons-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 20px 63px;
+    fill: $icons-color;
+
+    transition: background-color 250ms $timing-function,
+      fill 250ms $timing-function;
+  }
+
+  &-img:hover,
+  &-img:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+}

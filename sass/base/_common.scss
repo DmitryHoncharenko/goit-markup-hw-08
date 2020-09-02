@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $main-color;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.specialitycolor {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: $white-color;
+}
+
+.ourteam {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: $gray-color;
+}
+
+.footercolor {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: $footer-list;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+
+  width: 100%;
+  height: 4px;
+  background: $accent-color;
+  border-radius: 2px;
+
+  transition: opacity 250ms $timing-function;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: $black-color;
+  margin: 0;
+  padding-bottom: 50px;
+}

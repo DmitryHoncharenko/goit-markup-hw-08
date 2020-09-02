@@ -1,0 +1,41 @@
+$accent-color: #2196f3;
+$main-color: #757575;
+$white-color: #ffffff;
+$black-color: #212121;
+$item-title: rgba(47, 48, 58, 0.8);
+$footer-list: #2f303a;
+$gray-color: #f5f4fa;
+$icons-color: #afb1b8;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/roboto/roboto-v20-cyrillic-regular.woff") format("woff"),
+    url("../../fonts/roboto/roboto-v20-cyrillic-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../fonts/roboto/roboto-v20-cyrillic-500.woff") format("woff"),
+    url("../../fonts/roboto/roboto-v20-cyrillic-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/roboto/roboto-v20-cyrillic-700.woff") format("woff"),
+    url("../../fonts/roboto/roboto-v20-cyrillic-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../fonts/roboto/roboto-v20-cyrillic-900.woff") format("woff"),
+    url("../../fonts/roboto/roboto-v20-cyrillic-900.woff2") format("woff2");
+}
