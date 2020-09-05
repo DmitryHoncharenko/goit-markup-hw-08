@@ -448,7 +448,13 @@ footer {
 }
 
 .logo {
+  display: flex;
   margin-right: 94px;
+}
+
+.logo-footer {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -718,10 +724,6 @@ footer {
   line-height: 1.875;
   color: #757575;
   margin: 0;
-}
-
-.logo-footer {
-  margin-bottom: 20px;
 }
 
 .adress {

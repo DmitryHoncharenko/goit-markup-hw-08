@@ -448,7 +448,13 @@ footer {
 }
 
 .logo {
+  display: flex;
   margin-right: 94px;
+}
+
+.logo-footer {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -920,10 +926,6 @@ footer {
 
 .menu-item-tele {
   display: flex;
-}
-
-.logo-footer {
-  margin-bottom: 20px;
 }
 
 .adress {
