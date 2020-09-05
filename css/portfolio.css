@@ -448,12 +448,11 @@ footer {
 }
 
 .logo {
-  display: flex;
+  display: inline-flex;
   margin-right: 94px;
 }
 
 .logo-footer {
-  display: flex;
   margin-bottom: 20px;
 }
 
