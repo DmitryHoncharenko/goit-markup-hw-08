@@ -52,40 +52,40 @@
 
   transform: translatey(100%);
   transition: transform 250ms $timing-function;
-}
 
-.text-overlay {
-  width: 322px;
-  height: 168px;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.556;
+  &-text {
+    width: 322px;
+    height: 168px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.556;
 
-  color: $white-color;
-  margin: 0;
-  padding-top: 63px;
-  padding-bottom: 63px;
+    color: $white-color;
+    margin: 0;
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
 }
 
 .main-title {
   padding: 20px 24px;
-}
 
-.filter-title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: $black-color;
+  &-filter {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $black-color;
 
-  margin: 0;
-}
+    margin: 0;
+  }
 
-.subfilter-title {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.875;
-  color: $main-color;
+  &-subfilter {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.875;
+    color: $main-color;
 
-  margin: 0;
+    margin: 0;
+  }
 }

@@ -1,14 +1,24 @@
-.footer-list {
-  display: flex;
+.logo-footer {
+  margin-bottom: 20px;
 }
 
 .adress {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 70px;
+  margin-right: 38px;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  &-text {
+    font-style: normal;
+    margin-bottom: 9px;
+    color: $white-color;
+  }
+
+  &-link:not(:last-child) {
+    margin-bottom: 9px;
+  }
 
   &-title {
     text-align: center;
@@ -16,95 +26,49 @@
   }
 
   &-social {
+    display: flex;
+    flex-direction: column;
     padding-top: 72px;
     padding-bottom: 100px;
     margin-right: 93px;
   }
-}
 
-.logo-footer {
-  margin-bottom: 20px;
-}
-
-.text-adress {
-  text-align: justify;
-  margin: 0;
-
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
-
-  &-p {
-    font-style: normal;
-    text-align: justify;
-    margin: 0;
-    margin-bottom: 9px;
+  &-footer {
+    font-weight: bold;
+    line-height: 1.143;
+    text-transform: uppercase;
     color: $white-color;
+    padding-left: 30px;
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
-
-.item-title-footer {
-  font-weight: bold;
-  line-height: 1.143;
-  text-transform: uppercase;
-  color: $white-color;
-  display: flex;
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-.social-footer {
-  display: flex;
-}
-
-.social-icons-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.link-icon-footer {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  fill: $white-color;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-
-  transition: background-color 250ms $timing-function,
-    fill 250ms $timing-function;
-
-  &:hover,
-  &:focus {
-    background: $accent-color;
-  }
-}
-
 .form-footer {
   display: flex;
   padding-top: 108px;
   padding-bottom: 94px;
-}
 
-.input-footer {
-  position: relative;
-  display: flex;
-  width: 358px;
-  min-height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background: $footer-list;
-  margin: 0;
-  margin-right: 12px;
-}
+  &-input {
+    position: relative;
 
-.label-footer {
-  position: absolute;
-  transform: translateY(-35px);
-  font-weight: bold;
-  line-height: 1.143;
-  text-transform: uppercase;
-  color: $white-color;
+    width: 358px;
+    min-height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: $footer-list;
+    margin: 0;
+    margin-right: 12px;
+  }
+
+  &-label {
+    position: absolute;
+    transform: translateY(-35px);
+    font-weight: bold;
+    line-height: 1.143;
+    text-transform: uppercase;
+    color: $white-color;
+    margin-bottom: 20px;
+  }
 }

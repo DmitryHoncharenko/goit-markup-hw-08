@@ -1,19 +1,47 @@
-.link-icon {
-  display: inline-flex;
+.icons {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  fill: $icons-color;
-  background: $white-color;
-  border-radius: 50%;
+  padding-left: 32px;
+  padding-bottom: 24px;
+  padding-right: 32px;
 
-  transition: background-color 250ms $timing-function,
-    fill 250ms $timing-function;
+  &-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: $icons-color;
+    background: $white-color;
+    border-radius: 50%;
 
-  &:hover,
-  &:focus {
+    transition: background-color 250ms $timing-function,
+      fill 250ms $timing-function;
+  }
+  &-link:hover,
+  &-link:focus {
     background: $accent-color;
     fill: $white-color;
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &-footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: $white-color;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color 250ms $timing-function,
+      fill 250ms $timing-function;
+  }
+  &-footer:hover,
+  &-footer:focus {
+    background: $accent-color;
   }
 }
