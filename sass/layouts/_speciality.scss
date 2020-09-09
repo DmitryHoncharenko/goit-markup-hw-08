@@ -1,10 +1,11 @@
 .special {
-  display: flex;
-  margin-bottom: 94px;
+  // display: flex;
+  // margin-bottom: 94px;
+  margin-bottom: 60px;
 
-  &-item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &-item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &-title {
     margin: 0;
@@ -14,7 +15,11 @@
   }
 
   &-icons {
-    padding: 25px 100px;
+    width: 100%;
+    // padding: 25px 100px;
     background: $gray-color;
+  }
+  &-p:not(:last-child) {
+    margin-bottom: 30px;
   }
 }

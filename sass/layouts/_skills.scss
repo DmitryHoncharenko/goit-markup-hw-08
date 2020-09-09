@@ -1,16 +1,17 @@
 .skills {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+  display: none;
   margin-bottom: 94px;
+  // position: relative;
+  // display: flex;
+  // justify-content: space-between;
 
   &-item {
-    position: absolute;
-    width: 370px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // position: absolute;
+    width: 100%;
+    height: auto;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     top: 74.6%;
     font-weight: bold;
     line-height: 1.143;

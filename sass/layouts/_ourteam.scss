@@ -1,8 +1,9 @@
 .team {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   padding-bottom: 94px;
-  margin-bottom: 94px;
+  // margin-bottom: 94px;
+  margin-bottom: 60px;
 
   &-item {
     background: $white-color;
@@ -11,10 +12,10 @@
     border-radius: 0px 0px 4px 4px;
   }
 
-  .team-img {
-    display: block;
-    width: 270px;
-  }
+  // .team-img {
+  //   display: block;
+  //   width: 270px;
+  // }
 }
 .name-title {
   font-size: 16px;

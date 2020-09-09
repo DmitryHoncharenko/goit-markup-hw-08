@@ -1,18 +1,18 @@
 .menu-list {
-  display: flex;
-
+  // display: flex;
+  display: none;
   &-link:not(:last-child) {
     margin-right: 8px;
   }
 }
 
 .menu-item:not(:last-child) {
-  display: flex;
-  margin-right: 50px;
+  // display: flex;
+  // margin-right: 50px;
 }
 
 .menu-link {
-  position: relative;
+  // position: relative;
   display: block;
   font-weight: bold;
   line-height: 1.143;
@@ -28,8 +28,8 @@
   }
 
   &-list {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     padding-bottom: 50px;
     padding-top: 94px;
   }
@@ -41,9 +41,9 @@
     text-align: center;
     color: $black-color;
     text-decoration: none;
-    display: inline-block;
+    // display: inline-block;
     border-radius: 4px;
-    padding: 6px 22px;
+    // padding: 6px 22px;
     background: $gray-color;
 
     transition: background-color 250ms $timing-function,
