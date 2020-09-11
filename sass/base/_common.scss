@@ -16,8 +16,13 @@ body {
   color: $main-color;
 }
 
+h1,
+h2,
+h3,
+h4,
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 img {
@@ -67,11 +72,11 @@ footer {
   margin: 0px;
 }
 
-.navigation {
-  // display: flex;
-  // align-items: center;
-  // margin-right: auto;
-}
+// .navigation {
+//   // display: flex;
+//   // align-items: center;
+//   // margin-right: auto;
+// }
 
 .nav::after {
   content: "";
@@ -93,6 +98,6 @@ footer {
   line-height: 1.167;
   text-align: center;
   color: $black-color;
-  margin: 0;
+
   padding-bottom: 50px;
 }
