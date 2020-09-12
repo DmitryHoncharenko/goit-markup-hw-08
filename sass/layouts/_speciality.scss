@@ -5,19 +5,19 @@
   @include for-size(tablet-landscape) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
   }
 }
 // display: flex;
 // margin-bottom: 94px;
-@media screen and (max-width: 767px) {
-  .special-item:not(:last-child) {
+
+
+  .special__item:not(:last-child) {
     margin-bottom: 30px;
   }
-}
+
 
 @include for-size(tablet-landscape) {
-  .special-item {
+  .special__item {
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
