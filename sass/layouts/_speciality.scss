@@ -1,23 +1,26 @@
-.special {
+.speciality {
   padding-top: 60px;
   padding-bottom: 60px;
+}
 
+.special{
   @include for-size(tablet-landscape) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
+
 // display: flex;
 // margin-bottom: 94px;
 
 
-  .special__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  // .special-item:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
 
-
-@include for-size(tablet-landscape) {
-  .special__item {
+.special-item {
+   @include for-size(tablet-landscape) {
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
@@ -40,7 +43,7 @@
   margin-bottom: 10px;
   color: $black-color;
 
-  // margin-top: 30px;
+  
 }
 
 // .special-p:not(:last-child) {
