@@ -10,9 +10,11 @@
     <header class="container header">
       <div class="flexbox">
         <nav class="navigation">
+          
           <a href="./index.html" class="logo"
             ><img src="./images/webstudio.png" alt="" />
           </a>
+          
           <ul class="list menu-list">
             <li class="menu-item">
               <a href="./index.html" class="menu-link nav">Студия</a>
@@ -24,6 +26,13 @@
               <a href="#" class="menu-link">Контакты</a>
             </li>
           </ul>
+          <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-mobmenu" href="./images/sprite2.svg#icon-mobmenu"></use>
+              <use class="icon-cross" href="./images/sprite2.svg#icon-mobclose"></use>
+            </svg>
+          </button>
+          <div class="menu-container"> </div>
         </nav>
         <ul class="list menu-list">
           <li class="menu-item">
@@ -43,6 +52,7 @@
             </a>
           </li>
         </ul>
+      
       </div>
     </header>
     <main>
@@ -76,7 +86,7 @@
                   <label class="form-lebel" for="name"> Имя </label>
                 </div>
 
-                <div class="form-section">
+                 <div class="form-section">
                   <svg class="form-iconname" width="13" height="13">
                     <use href="./images/sprite2.svg#icon-Vectortelephone"></use>
                   </svg>
@@ -139,9 +149,9 @@
         </div>
       </section>
       <!--speciality -->
-      <section>
-        <div class="container special">
-          <ul class="list ">
+      <section class="speciality">
+        <div class="container">
+          <ul class="list special">
             <li class="special__item">
               <div class="special__cons">
                 <svg width="65" height="70">
@@ -478,42 +488,42 @@
         <div class="container">
           <h2 class="text-title">Постоянные клиенты</h2>
           <ul class="list clients">
-            <li>
+            <li class="clients-item">
               <a href="#" class="clients-img"
                 ><svg width="44" height="49">
                   <use href="./images/sprite2.svg#icon-client1"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients-item">
               <a href="#" class="clients-img">
                 <svg width="40" height="52">
                   <use href="./images/sprite2.svg#icon-client2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients-item">
               <a href="#" class="clients-img"
                 ><svg width="41" height="42">
                   <use href="./images/sprite2.svg#icon-client3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients-item">
               <a href="#" class="clients-img"
                 ><svg width="80" height="42">
                   <use href="./images/sprite2.svg#icon-client4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients-item">
               <a href="#" class="clients-img"
                 ><svg width="59" height="47">
                   <use href="./images/sprite2.svg#icon-client5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients-item">
               <a href="#" class="clients-img"
                 ><svg width="88" height="45">
                   <use href="./images/sprite2.svg#icon-client6"></use>
@@ -525,7 +535,7 @@
       </section>
     </main>
     <!-- footer-->
-    <footer>
+    <footer class="footer">
       <div class="container flexbox">
         <section class="footer-list">
         <div class="adress">
@@ -628,6 +638,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

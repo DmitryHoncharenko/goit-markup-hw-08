@@ -3,9 +3,66 @@
 // }
 
 .header {
+  position: relative;
   background: $white-color;
   // padding: 24px 15px;
   padding-bottom: 16px;
   padding-top: 16px;
   border-bottom: 1px solid $gray-color;
 }
+
+.navigation{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation.menu-button {
+  overflow: hidden;
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 10px 10px 10px 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-mobmenu {
+  display: none;
+}
+ 
+.menu-container {
+  
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  
+    @media screen and (max-width: 767px){
+    display: none;
+    position: absolute;
+     overflow-y: scroll;
+     top: 100%;
+     left: 0;
+     top: 10%;
+     width: 480px;
+     height: 397px;
+    
+  &.is-open {
+    display: block;
+  }
+}
+@media screen and (min-width: 767px) {
+  display: flex: ;
+}
+}
+ 
+    
+    position: absolute;
