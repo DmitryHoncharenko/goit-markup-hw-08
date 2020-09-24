@@ -42,27 +42,27 @@
  
 .menu-container {
   
-    background: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   
-    @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px){
     display: none;
     position: absolute;
-     overflow-y: scroll;
-     top: 100%;
-     left: 0;
-     top: 10%;
-     width: 480px;
-     height: 397px;
+    overflow-y: scroll;
+    top: 100%;
+    left: 0;
+    top: 10%;
+    width: 480px;
+    height: 397px;
     
-  &.is-open {
+&.is-open {
     display: block;
   }
 }
 @media screen and (min-width: 767px) {
-  display: flex: ;
+  display: flex;
 }
-}
+
  
     
-    position: absolute;
+   
