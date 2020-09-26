@@ -628,6 +628,7 @@ img {
 }
 
 .header {
+  position: relative;
   background: #ffffff;
   padding-bottom: 16px;
   padding-top: 16px;
@@ -635,13 +636,16 @@ img {
 }
 
 .navigation {
-  display: block;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.navigation.menu-button {
+.navigation .menu-button {
   overflow: hidden;
 }
 
@@ -668,21 +672,32 @@ img {
 }
 
 .menu-container {
-  padding: 60px 140px;
-  width: 100%;
-  position: absolute;
-  padding: 60px 140px;
-  overflow-y: scroll;
-  left: 0;
-  width: 100%;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
-@media screen {
+@media screen and (max-width: 767px) {
   .menu-container {
-    max-width: 480px;
+    display: none;
+    position: absolute;
+    overflow-y: scroll;
+    top: 100%;
+    left: 0;
+    top: 10%;
+    width: 480px;
+    height: 397px;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

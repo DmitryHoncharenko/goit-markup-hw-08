@@ -11,13 +11,13 @@
   border-bottom: 1px solid $gray-color;
 }
 
-.navigation{
+.navigation {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
 
-.navigation.menu-button {
+.navigation .menu-button {
   overflow: hidden;
 }
 
@@ -59,12 +59,9 @@
   &.is-open {
     display: block;
   }
+}
 
-  @media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) {
     display: flex;
   }
 }
-
-
- 
-    
