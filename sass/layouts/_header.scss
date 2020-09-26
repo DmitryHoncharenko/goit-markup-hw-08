@@ -5,7 +5,7 @@
 .header {
   position: relative;
   background: $white-color;
-  // padding: 24px 15px;
+  
   padding-bottom: 16px;
   padding-top: 16px;
   border-bottom: 1px solid $gray-color;
@@ -20,6 +20,7 @@
 .navigation.menu-button {
   overflow: hidden;
 }
+
 .menu-button {
   display: inline-flex;
   margin: 0;
@@ -55,14 +56,15 @@
     width: 480px;
     height: 397px;
     
-&.is-open {
+  &.is-open {
     display: block;
   }
+
+  @media screen and (min-width: 767px) {
+    display: flex;
+  }
 }
-@media screen and (min-width: 767px) {
-  display: flex;
-}
+
 
  
     
-   
