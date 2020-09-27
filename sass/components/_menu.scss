@@ -1,15 +1,20 @@
-.menu-list {
+.menu-nav {
   // display: flex;
-  display: none;
-  &-link:not(:last-child) {
-    margin-right: 8px;
-  }
+  // display: none;
+  // &-link:not(:last-child) {
+  //   margin-right: 8px;
+  // }
+  display: block;
 }
 
 // .menu-item:not(:last-child) {
 //   // display: flex;
 //   // margin-right: 50px;
 // }
+
+.menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
 
 .menu-link {
   // position: relative;
