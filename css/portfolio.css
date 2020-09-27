@@ -388,8 +388,12 @@ body {
   color: #757575;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
-  width: 100%;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -448,6 +452,10 @@ img {
     font-size: 28px;
     line-height: 1.17;
   }
+}
+
+.logo {
+  width: 134px;
 }
 
 .logo-footer {
@@ -629,20 +637,20 @@ img {
 
 .header {
   position: relative;
-  background: #ffffff;
-  padding-bottom: 16px;
-  padding-top: 16px;
   border-bottom: 1px solid #f5f4fa;
+  background: #ffffff;
 }
 
 .navigation {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation.menu-button {
@@ -653,10 +661,15 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 0;
-  padding: 10px 10px 10px 0;
+  margin: 10px 0;
+  padding: 12px 8px;
   border: none;
   background-color: transparent;
+}
+
+.menu-button:hover,
+.menu-button:focus {
+  fill: #2196f3;
 }
 
 .menu-button .icon-cross {
@@ -681,12 +694,12 @@ img {
   .menu-container {
     display: none;
     position: absolute;
-    overflow-y: scroll;
     top: 100%;
     left: 0;
-    top: 10%;
-    width: 480px;
-    height: 397px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 400px;
   }
   .menu-container.is-open {
     display: block;

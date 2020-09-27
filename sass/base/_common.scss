@@ -15,11 +15,15 @@ body {
   text-decoration: none;
   color: $main-color;
 }
+
+body.modal-open {
+  overflow: hidden;
+}
   
 
 
 .container {
-  width:100%;
+  max-width: 100%;
 
   padding-left: 15px;
   padding-right: 15px;
