@@ -1,5 +1,12 @@
 .logo {
-  width: 134px;
+  @media screen and (max-width: 767px) {
+    width: 134px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+    
   
   // display: inline-flex;
   // margin-right: 94px;

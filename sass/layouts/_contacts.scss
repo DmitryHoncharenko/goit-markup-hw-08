@@ -5,8 +5,8 @@
   text-decoration: none;
   color: $main-color;
   fill: $main-color;
-  // display: inline-flex;
-  // align-items: center;
+  display: inline-flex;
+  align-items: center;
 
   transition: color 250ms $timing-function, fill 250ms $timing-function;
 }
@@ -18,5 +18,5 @@
 }
 
 // .menu-item-tele {
-//   // display: flex;
+//   display: flex;
 // }

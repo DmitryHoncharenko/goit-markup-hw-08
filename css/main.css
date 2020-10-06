@@ -454,8 +454,16 @@ img {
   }
 }
 
-.logo {
-  width: 134px;
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 134px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
 }
 
 .logo-footer {
@@ -527,14 +535,44 @@ img {
 }
 
 .menu-nav {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.menu-item:not(:last-child) {
-  margin-bottom: 40px;
+@media screen and (min-width: 768px) {
+  .menu-nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 84px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-nav {
+    display: inline-block;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-item:not(:last-child) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .menu-link {
+  position: relative;
   display: block;
   font-weight: bold;
   line-height: 1.143;
@@ -549,9 +587,16 @@ img {
   color: #2196f3;
 }
 
-.menu-link-list {
-  padding-bottom: 50px;
-  padding-top: 94px;
+@media screen and (max-width: 767px) {
+  .menu-link-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 }
 
 .menu-link-saction {
@@ -561,15 +606,45 @@ img {
   text-align: center;
   color: #212121;
   text-decoration: none;
+  display: inline-block;
   border-radius: 4px;
+  padding: 6px 22px;
   background: #f5f4fa;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .menu-link-saction {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+}
+
 .menu-link-saction:hover, .menu-link-saction:focus {
   background: #2196f3;
   color: #ffffff;
+}
+
+.menu-link.nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-contact {
+    display: inline-block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 
 .icons {
@@ -843,12 +918,24 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .navigation.menu-button {
@@ -856,13 +943,19 @@ img {
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 10px 0;
-  padding: 12px 8px;
-  border: none;
-  background-color: transparent;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 10px 0;
+    padding: 12px 8px;
+    border: none;
+    background-color: transparent;
+  }
 }
 
 .menu-button:hover,
@@ -1032,6 +1125,12 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .team-img {
   margin-bottom: 30px;
   width: 100%;
@@ -1121,6 +1220,12 @@ img {
   text-decoration: none;
   color: #757575;
   fill: #757575;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
